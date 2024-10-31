@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Tarefa2 {
     public static void main(String[] args) {
-        int Vetor[] = new int[10], numeroPassado=0, soma=0;
+        int Vetor[] = new int[10], numeroPassado = 0, soma = 0;
         float media;
 
         Scanner leia = new Scanner(System.in);
@@ -15,26 +15,26 @@ public class Tarefa2 {
         System.out.println("Valores pares: ");
         for (int j = 0; j < Vetor.length; j++) {
             if (Vetor[j] % 2 == 0) {
-                System.out.printf("%d ",Vetor[j]);
+                System.out.printf("%d ", Vetor[j]);
             }
         }
-            System.out.println("\n");
-            System.out.println("Valores impares : ");
-            for (int h = 0; h < Vetor.length; h++) {
-                if (Vetor[h] % 2 != 0) {
-                    System.out.printf("%d ",Vetor[h]);
-                }
+        System.out.println("\n");
+        System.out.println("Valores impares : ");
+        for (int h = 0; h < Vetor.length; h++) {
+            if (Vetor[h] % 2 != 0) {
+                System.out.printf("%d ", Vetor[h]);
             }
-        for (int s = 0 ; s < Vetor.length; s++){
+        }
+        for (int s = 0; s < Vetor.length; s++) {
             soma = Vetor[s] + numeroPassado;
             numeroPassado = soma;
         }
 
-        System.out.println("\n A soma dos vetores é: "+ soma);
+        System.out.println("\n A soma dos vetores é: " + soma);
 
-        media = soma/Vetor.length;
+        media = soma / Vetor.length;
 
-        System.out.println("\n A média dos vetores é " +media);
+        System.out.println("\n A média dos vetores é " + media);
+        leia.close();
     }
-
 }
